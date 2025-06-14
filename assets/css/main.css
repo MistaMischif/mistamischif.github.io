@@ -89,7 +89,7 @@ input, select, textarea {
     font-size: 18px;
     line-height: 1.5;
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    font-weight: bold;
+    /* [disabled]font-weight: bold; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -240,6 +240,9 @@ input, select, textarea {
 			.container {
 				width: 1200px;
 			}
+.h2 {
+}
+
 
 		}
 
@@ -1770,7 +1773,7 @@ input, select, textarea {
     font-size: 20px;
     margin: 1em 0 2em 0;
     line-height: 1.5em;
-    text-align: center;
+    text-align: left;
 		}
 
 	footer {
