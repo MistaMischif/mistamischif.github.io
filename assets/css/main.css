@@ -22,6 +22,7 @@ section, summary, time, mark, audio, video {
     font: inherit;
     vertical-align: top;
     padding-bottom: 0px;
+    width: auto;
 }
 
 article, aside, details, figcaption, figure,
@@ -396,7 +397,7 @@ input, select, textarea {
 		}
 
 		.row > .col-10 {
-			width: 83.33333%;
+    width: 50px;
 		}
 
 		.row > .off-10 {
@@ -1800,9 +1801,9 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 4em 0;
+    display: block;
+    width: 100%;
+    margin: 0 0 4em 0;
 		}
 
 		.image.left {
@@ -2167,9 +2168,14 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		background: #fff;
-		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+    background: #fff;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 1px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1px;
 	}
 
 		.wrapper.style2 {

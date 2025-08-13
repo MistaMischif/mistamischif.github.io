@@ -1,0 +1,178 @@
+<xml></xml>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Igloo Inc. Inspired Corporate</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gradient-main: linear-gradient(90deg,#2A5CAA,#7D33FF);
+      --glass-bg: rgba(255,255,255,0.15);
+      --glass-blur: blur(8px);
+    }
+    body {
+      margin:0; font-family:Montserrat,sans-serif; background:#f0f4fb; color:#21253A;
+    }
+    header {
+      background: var(--gradient-main);
+      color: #fff;
+      padding: 2em 0 5em;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom:0.3em;
+      background: linear-gradient(90deg,#7D33FF,#2A5CAA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+    .cta-btn {
+      background: #fff;
+      color: #2A5CAA;
+      border: none;
+      border-radius: 25px;
+      padding: 0.8em 2.2em;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow:0 8px 32px rgba(42,92,170,0.1);
+      cursor:pointer;
+      margin-top: 1.4em;
+      transition: transform 0.2s;
+    }
+    .cta-btn:hover {
+      transform: scale(1.07);
+      background: #7D33FF;
+      color: #fff;
+    }
+    nav {
+      background: rgba(255,255,255,0.8);
+      padding:1em 0;
+      text-align: center;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    nav a {
+      margin:0 2em; color:#2A5CAA; text-decoration:none; font-weight:700; font-size:1.1em;
+      transition: color 0.2s;
+    }
+    nav a:hover { color:#7D33FF; }
+    .features {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:2em;
+      margin: -3em auto 3em auto;max-width:1200px;padding:2em;
+    }
+    .feature-card {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      border-radius: 24px;
+      padding:2em;box-shadow:0 2px 12px rgba(42,92,170,0.1);
+      transition: transform 0.4s;
+    }
+    .feature-card:hover { transform:rotateY(15deg) scale(1.03); }
+    .carousel {
+      display: flex; overflow-x: auto; padding:2em 0; background: #fff;
+      gap: 3em; justify-content:center; align-items:center;
+    }
+    .carousel img {
+      width:120px; height:60px; object-fit:contain;
+      filter: grayscale(1) brightness(0.9);
+      transition: transform 0.2s, filter 0.2s;
+      margin:0 1em; background:#fff; padding:0.7em; border-radius:12px;
+    }
+    .carousel img:hover {
+      transform:scale(1.13); filter: grayscale(0) brightness(1.1);
+    }
+    .team {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.6em;
+      background:#f6f8ff; padding:2.4em 1em; max-width:1150px; margin:auto;
+    }
+    .team-member {
+      background:var(--glass-bg);backdrop-filter:var(--glass-blur); border-radius:20px;padding:2em;text-align:center;
+    }
+    .team-member img { border-radius:50%;width:96px;height:96px;object-fit:cover;margin-bottom:1em;}
+    .footer {
+      padding:2em 0;background:#23264D;color:#fff;text-align:center;
+    }
+    .footer svg { margin: 0 0.6em; width: 26px; fill: #fff; transition: fill 0.2s;}
+    .footer svg:hover { fill: #7D33FF; }
+    @media(max-width:700px){ .features,.team {grid-template-columns:1fr;} .carousel img{width:80px;height:40px;} nav a{margin:0 1em;} }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#demo">Demo</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Header -->
+  <header id="home">
+    <!-- These could be your graphics as SVG/backgrounds -->
+    <h1>Digital Transformation Made Simple</h1>
+    <p>Empowering your digital journey with innovative tech solutions.</p>
+    <button class="cta-btn">Get Started</button>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h2>Collaborative Platforms</h2>
+      <p>Streamlined digital workspaces for seamless team collaboration.</p>
+    </div>
+    <div class="feature-card">
+      <h2>Interactive Demos</h2>
+      <p>Hands-on experience with live product previews and guides.</p>
+    </div>
+    <div class="feature-card">
+      <h2>Real-Time Analytics</h2>
+      <p>Instant insights to power smarter business decisions.</p>
+    </div>
+  </section>
+
+  <!-- Client/Partner Logo Carousel -->
+  <section class="carousel">
+    <img src="yourlogo1.png" alt="Client 1 Logo">
+    <img src="yourlogo2.png" alt="Client 2 Logo">
+    <img src="yourlogo3.png" alt="Client 3 Logo">
+    <img src="yourlogo4.png" alt="Client 4 Logo">
+    <!-- Add more logos as desired -->
+  </section>
+
+  <!-- Team Section -->
+  <section class="team" id="team">
+    <div class="team-member">
+      <img src="team1.jpg" alt="Team Member">
+      <h3>Alex Chen</h3>
+      <p>CEO & Co-Founder</p>
+    </div>
+    <div class="team-member">
+      <img src="team2.jpg" alt="Team Member">
+      <h3>Maya Patel</h3>
+      <p>Lead Developer</p>
+    </div>
+    <div class="team-member">
+      <img src="team3.jpg" alt="Team Member">
+      <h3>Jordan Lee</h3>
+      <p>UX Designer</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <!-- Replace with your own social icon SVGs or PNGs -->
+      <svg viewBox="0 0 24 24"><path d="M24 4.6a10 10 0 01-2.83.775A5.04 5.04 0 0023.34 3.1a10 10 0 01-3.18 1.22A5.01 5.01 0 0016.6 2c-2.76 0-5 2.24-5 5 0 .39.05.77.13 1.13A14.08 14.08 0 013 3.2a4.97 4.97 0 001.54 6.66c-.52-.02-1.01-.16-1.44-.4v.04c0 2.28 1.61 4.19 3.75 4.61a5.08 5.08 0 01-1.31.18c-.32 0-.64-.03-.94-.09.64 2 2.5 3.45 4.71 3.5A10.05 10.05 0 012 19.5c.68.44 1.46.7 2.31.7 6.25 0 9.68-5.19 9.68-9.68 0-.15 0-.3-.01-.45A7.04 7.04 0 0024 4.6z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M22.45 6c-.77.35-1.6.59-2.46.7.89-.53 1.56-1.38 1.88-2.38-.83.49-1.74.84-2.71 1.03a4.48 4.48 0 00-7.65 4.08A12.87 12.87 0 013 4.79c-.42.7-.66 1.5-.66 2.37 0 1.64.84 3.08 2.13 3.93a4.47 4.47 0 01-2.05-.56v.06c0 2.28 1.63 4.18 3.88 4.62-.4.11-.82.17-1.25.17-.3 0-.6-.03-.89-.09.6 1.86 2.36 3.2 4.44 3.24A8.99 8.99 0 012 18.5c.62.37 1.32.59 2.09.59 6.33 0 9.79-5.24 9.79-9.79 0-.15 0-.31-.01-.46A7.1 7.1 0 0024 4.59z"/></svg>
+    </div>
+    <div style="margin-top:1em;">© 2024 Your Company. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>
